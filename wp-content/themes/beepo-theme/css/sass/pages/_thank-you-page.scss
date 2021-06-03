@@ -1,0 +1,22 @@
+#thank-you-page-main-container{
+	h2{
+		color: $orange;
+		text-transform: none;
+		font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		font-size: 38px;
+		line-height: 38px;
+		margin-bottom: 15px;
+	}
+	p{
+		font-family: 'DIN2014-Light','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		font-size: 22px;
+	}
+
+}
+.thank-you-page-content{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.wpcf7-mail-sent-ok{
+	display: none !important;
+}

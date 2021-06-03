@@ -1,0 +1,105 @@
+#webinar-beepo-career-page-container {
+    .beepo-career-page-header-container {
+        .header-page-title-wrapper {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .page-header.section-header {
+                max-width: 530px;
+                h1 {
+                    font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+                    span {
+                        font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+                        font-weight: 100;
+                        font-size: 24px;
+                        line-height: 24px;
+                    }
+                }
+                .webinar-page-title {
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.beepo-simple-page-container {
+    .header-page-title-wrapper {
+        top: 0 !important;
+        bottom: 0 !important;
+        .page-header {
+            max-width: 560px;
+        }
+    }
+}
+
+#mc_embed_signup {
+    background: #ecedee !important;
+    form {
+        padding: 10px 3% 10px !important;
+    }
+    h2 {
+        padding: 0 24px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .clear {
+        text-align: center;
+    }
+    .button {
+        background-color: #f78f1e !important;
+        &:hover {
+            background-color: #aaa !important;
+        }
+    }
+    .mc-field-group {
+        width: 100% !important;
+        textarea {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .indicates-required,
+    .mc-field-group,
+    .button {
+        margin-right: 0 !important;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .beepo-simple-page-container .webinar-page-title {
+        line-height: 1 !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #webinar-beepo-career-page-container .header-main-title-container .header-page-title-wrapper span h1,
+    .beepo-simple-page-container h1 {
+        font-size: 25px !important;
+        line-height: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #webinar-beepo-career-page-container .header-main-title-container .header-page-title-wrapper span h1,
+    .beepo-simple-page-container h1 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+    #webinar-beepo-career-page-container .header-main-title-container .header-page-title-wrapper  {
+        top: 0;
+        bottom: 0;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    #webinar-beepo-career-page-container .page-header.section-header h1 span {
+        font-size: 16px !important;
+        line-height: 1 !important;
+    }
+}

@@ -1,0 +1,137 @@
+.jobadder-container{
+	padding-bottom: 40px;
+}
+#beepo-career-job-listing{
+	list-style: none;
+	li{
+		-webkit-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		overflow: hidden;
+		margin-bottom: 40px;
+		&:nth-child(odd){
+			.top-job-title-section{
+				background-color: $outer-space;
+				.top-job-title-right-section{
+					.beepo-career-apply-btn-outer{
+						.beepo-career-apply-btn{
+							background-color: $orange;
+						}
+					}
+				}
+			}
+		}
+		&:nth-child(even){
+			.top-job-title-section{
+				background-color: $orange;
+				.top-job-title-right-section{
+					.beepo-career-apply-btn-outer{
+						.beepo-career-apply-btn{
+							background-color: $outer-space;
+						}
+					}
+				}
+			}
+		}	
+		.top-job-title-section{
+			padding: 15px;
+			.top-job-title-left-section{
+				h2{
+					text-transform: capitalize;
+					font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+					color: $white;
+					margin-bottom: 0px;
+					font-size: 1.5rem;
+					padding-right: 15px;
+					border-right: 2px solid $white;
+					float: left;
+				}
+				.beepo-career-job-category{
+					float: left;
+					color: $white;
+					font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif; 
+					font-size: 15px;
+					text-transform: uppercase;
+					margin-left: 15px;
+				    line-height: 30px;
+				}
+			}
+			.top-job-title-right-section{
+				.beepo-career-apply-btn-outer{
+					float: right;
+					.beepo-career-apply-btn{
+						border-radius: 16px;
+						padding: 5px 20px 5px;
+						color: $white;
+						text-transform: uppercase;
+						border: none;
+						font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+						font-size: 15px;
+						cursor: pointer;						
+					}
+				}
+			}			
+		}
+		.beepo-job-title-short-description{
+			background-color: $white;
+			padding: 20px 20px 20px 20px; 
+		}
+	}
+	.no-results{
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+		-moz-box-shadow: 0px 0px 0px -0px rgba(0,0,0,0);
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+		-webkit-border-radius: 0px !important;
+		-moz-border-radius: 0px !important;
+	}
+}
+
+//Search Job Form
+#beepo-search-job-form{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	.search-job-form-keyword{
+		width: 59%;
+		margin-right: 15px;
+	}
+	.beepo-input-dropdown{
+		margin-right: 15px;
+	}
+	.beepo-career-gray-btn{
+		margin-top: -3px;
+	}
+}
+
+@media only screen and (max-width: 1199px){
+	#beepo-search-job-form{
+		.search-job-form-keyword{
+			width: 54%;
+		}
+	}
+}
+@media only screen and (max-width: 991px){
+	#beepo-search-job-form{
+		.search-job-form-keyword{
+			width: 100%;
+			margin-bottom: 15px
+		}
+		.beepo-input-dropdown{
+			width: 70%;
+		}
+	}
+}
+@media only screen and (max-width: 414px) {
+	#beepo-search-job-form{
+		.beepo-input-dropdown{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.beepo-career-gray-btn{
+			margin-bottom: 15px;
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+#beepo-careers-not-found-page .row{
+	margin-right: 0px !important;
+	margin-left: 0px !important;	
+}
+.page-not-found-container-page{
+	background-color: $orange !important;
+	padding-top: 80px;
+}
+.page-not-found-bottom-img img{
+	display: block;
+	margin: 0px auto;
+	width: 100%;
+}
+.page-not-found-container-page h2{
+    font-family: "DIN-Regular";
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 0px;	
+}
+.page-not-found-container-page .section-header h1{
+    font-size: 70px;
+    font-family: "DIN-Bold";
+    line-height: normal;
+    margin: 20px 0 0;	
+}
+.page-not-found-container-page h2,
+.page-not-found-container-page .section-header,
+.page-not-found-container-page .section-header h1{
+	color: #ffffff !important;
+}
+.page-not-found-container-page .secondary-header .section-subheader{
+    font-size: 35px;
+    line-height: normal;
+}
+#back-to-home-btn{
+	font-family: 'DIN-Regular';
+	// font-weight: 600;
+	color: #ffffff;
+	font-size: 32px;
+	text-align: center;
+	background-color: $gray;
+	border-radius: 16px;
+	text-transform: uppercase;
+	max-width: 280px;
+	width: 100%;
+	display: block;
+	margin: 0px auto;
+	padding: 15px;
+}

@@ -1,0 +1,266 @@
+#main-homepage-v2-container{
+	p{
+		font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;;
+	}
+}
+#main-homepage-banner-container{
+	background-image: url('images//homepage-v2/main-banner-background-v2.jpg');
+	background-position: center center;
+	background-size: cover;
+	min-height: 650px;
+	padding: 250px 100px 250px;
+	h1{
+		color: $gray;
+		font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		font-size: 62px;
+		// line-height: 650px;
+		text-align: center;
+		text-transform: initial;
+		margin-bottom: 15px;
+		span{
+			color: $white;
+			font-family: 'DIN2014-Bold';
+		}
+	}
+}
+.homepage-apply-now-btn{
+	margin: 10px auto; 
+	display: block; 
+	max-width: 300px;
+	height: auto; 
+	width: 100%;
+}
+.homepage-searchbox-container{
+	#search-you-job-form-wrapper{
+		margin-bottom: -90px !important;
+	}
+}
+#homepage-intro-and-search-for-jobs{
+	background-color: $outer-space;
+	padding-top: 40px;
+	padding-bottom: 15px;
+}
+#who-we-are-section{
+	background-color: $black-haze;
+}
+#who-we-are-main-box{
+	margin-bottom: 40px;
+	h4{
+		color: $orange;
+		font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+	}
+	h5{
+		color: $white;
+		font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+	}
+	p{
+		color: $white;
+	}
+}
+#job-opportunities-in-clark-section{
+	background-color: $black-haze;
+	padding-top: 100px;
+	overflow: hidden;
+	h4{
+		font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		text-align: center;
+		margin-bottom: 25px;
+		span{
+			color: $orange;
+		}
+	}
+	h5{
+		color: $cornflower-blue;
+	}
+}
+.job-opportunities-column{
+	border-radius: 3px;
+	border: 3px solid $cornflower-blue;
+	padding: 20px;
+	min-height: 250px;	
+	margin-bottom: 60px;
+	cursor: pointer;
+	@include transition-element;
+	h5{
+		font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		@include transition-element;
+	}
+	&:hover{
+		border: 3px solid $orange;
+		.job-opportunities-accountant{
+			background-image: url(images/homepage-v2/job-opportunities-icons/accountant-orange.png);
+			@include transition-background;
+		}
+		.job-opportunities-digital-marketing-specialist{
+			background-image: url(images/homepage-v2/job-opportunities-icons/digital-marketing-specialist-orange.png);
+			@include transition-background;
+		}
+		.job-opportunities-graphic-designer{
+			background-image: url(images/homepage-v2/job-opportunities-icons/graphic-designer-orange.png);
+			@include transition-background;
+		}
+		.job-opportunities-outbound-agent{
+			background-image: url(images/homepage-v2/job-opportunities-icons/outbound-agent-orange.png);
+			@include transition-background;
+		}
+		.job-opportunities-property-management-assistant{
+			background-image: url(images/homepage-v2/job-opportunities-icons/property-management-assistant-orange.png);
+			@include transition-background;
+		}
+		.job-opportunities-web-designer-and-developer{
+			background-image: url(images/homepage-v2/job-opportunities-icons/web-designer-and-developer-orange.png);
+			@include transition-background;
+		}
+		.job-opportunities-icon-container{
+			h5{
+				@include transition-element;
+				color: $orange !important;
+			}			
+		}
+	}
+}
+.job-opportunities-icon-wrapper{
+	background-color: $black-haze;
+	height: 85px;
+	width: 85px;
+	margin-bottom: 15px;
+	margin-top: -65px;
+}
+.job-opportunities-icons{
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 85px;
+	width: 85px;
+}
+.job-opportunities-accountant{
+	background-image: url(images/homepage-v2/job-opportunities-icons/accountant.png);
+	@include transition-background;
+}
+.job-opportunities-digital-marketing-specialist{
+	background-image: url(images/homepage-v2/job-opportunities-icons/digital-marketing-specialist.png);
+	@include transition-background;
+}
+.job-opportunities-graphic-designer{
+	background-image: url(images/homepage-v2/job-opportunities-icons/graphic-designer.png);
+	@include transition-background;
+}
+.job-opportunities-outbound-agent{
+	background-image: url(images/homepage-v2/job-opportunities-icons/outbound-agent.png);
+	@include transition-background;
+}
+.job-opportunities-property-management-assistant{
+	background-image: url(images/homepage-v2/job-opportunities-icons/property-management-assistant.png);
+	@include transition-background;
+}
+.job-opportunities-web-designer-and-developer{
+	background-image: url(images/homepage-v2/job-opportunities-icons/web-designer-and-developer.png);
+	@include transition-background;
+}
+#join-us-section{
+    background: #F4F4F4 url(images/homepage-v2/join-us-section-bg-v2.png) no-repeat bottom center;
+    padding-top: 80px;
+}
+#join-us-cta-container{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	h3{
+		margin-bottom: 25px;
+		color: $cornflower-blue;
+		font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		span{
+			font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		}
+	}
+}
+.meet-the-team-image{
+	display: block;
+	height: auto;
+	margin: 0px auto;
+	width: 100%;
+	bottom: 0%;
+    position: absolute;
+}
+@media only screen and (max-width : 1200px) {
+
+}
+@media only screen and (max-width : 991px) {
+	#main-homepage-banner-container{
+		h1{
+			font-size: 38px;
+    		// line-height: 545px;
+		}
+	}
+	.meet-the-team-image{
+		position: unset;
+	}
+	#join-us-cta-container{
+		margin-top: 0px;
+	} 
+	#join-us-section{
+		padding-top: 95px;
+		background: #fac58b url(images/homepage-v2/join-us-section-bg-v2.png) no-repeat top center;
+	}
+}
+@media only screen and (max-width : 979px) {
+	#main-homepage-banner-container{
+		h1{
+			font-size: 36px;
+		}
+	}
+	.meet-the-team-image{
+		position: unset;
+	}
+	.homepage-searchbox-container{
+		margin-top: 0px;
+	}
+	#job-opportunities-in-clark-section{
+		padding-top: 60px;
+	}
+	#who-we-are-main-box{
+		margin-bottom: 80px;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	#main-homepage-banner-container{
+		
+		h1{
+			font-size: 31px;			
+		}
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	#main-homepage-banner-container{
+		min-height: 400px;
+		padding: 110px 60px 110px;
+		h1{
+			font-size: 21px;
+			// line-height: 400px;
+		}
+		.beepo-btn-v2{
+		    font-size: 15px;
+		    line-height: 15px;
+		    max-width: 180px;
+		    padding: 15px 35px 15px;	
+		}
+	}
+}
+@media only screen and (max-width : 360px) {
+	.homepage-searchbox-container{
+		margin-top: 0px;
+	}
+	#job-opportunities-in-clark-section{
+		padding-top: 60px;
+	}
+}
+@media only screen and (max-width : 320px) {
+	#main-homepage-banner-container{
+		min-height: 200px;
+		h1{
+			font-size: 16px;
+			// line-height: 200px;
+		}
+	}
+}

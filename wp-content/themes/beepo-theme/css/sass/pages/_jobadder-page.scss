@@ -1,0 +1,222 @@
+#jobadder-main-container{
+
+}
+#jobadder-top-contents{
+	margin-top: 40px;
+	h1{
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	.entry-content-page{
+		margin-bottom: 50px;
+	}
+}
+#ja-jobs-widget > .ja-job-search, #ja-jobs-widget > .ja-job-list-container {
+    // float: left;
+}
+#ja-jobs-widget > .ja-job-search {
+    width: 100%;
+    margin-bottom: 25px;
+    &:after{
+	    clear: both;
+	    content: "";
+	    display: block;    	
+    }
+}
+.ja-loading{
+	display: block;
+	margin: 10px auto 10px;
+	text-align: center;
+	width: 20px;
+	height: 20px;;
+}
+#ja-jobs-widget > .ja-job-list-container {
+    width: 100%;
+}
+.jobadder-container{
+	background-color: #F3F4F4;
+	padding: 40px 30px 40px;
+	margin-bottom: 60px;
+    h2{
+    	color: $orange;
+    	text-align: center;
+    	margin-bottom: 20px;
+    }	
+}
+#ja-jobs-widget{
+	.ja-job-details{
+		-webkit-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		overflow: hidden;
+		margin-bottom: 40px;
+		padding-bottom: 15px;
+		background-color: #ffffff;
+		.title{
+			font-size: 16px;
+			text-transform:	capitalize;
+		    font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+		    color: #fff;
+		    margin-bottom: 0px;
+		    padding: 10px 20px 10px;		    
+		    background-color: #303c42;
+		    margin-bottom: 15px;			
+		}
+		.meta,
+		.description,
+		.apply{
+			padding-right: 15px;
+			padding-left: 15px;
+			input{
+				border-radius: 16px;
+			    padding: 5px 20px 5px;
+			    color: #fff;
+			    text-transform: uppercase;
+			    border: none;
+			    font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+			    font-size: 15px;
+			    cursor: pointer;
+			    background-color: #f8951d;
+			    float: right;						
+			}
+		}
+
+	}
+}
+.powered-by-jobadder,
+.date-posted{
+	display: none;
+}
+.ja-job-list{
+	.job{
+		-webkit-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		overflow: hidden;
+		margin-bottom: 40px;
+		padding-bottom: 15px;
+		.title{
+			font-size: 16px;
+			text-transform:	capitalize;
+		    font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+		    color: #fff;
+		    margin-bottom: 0px;
+		    padding: 10px 20px 10px;		    
+		    background-color: #303c42;
+		    margin-bottom: 15px;
+		    font-weight: 600;
+		    text-align: left;
+		    a{
+		    	color: #ffffff;		    	
+		    }
+		}
+		.meta{
+
+		}
+		.view-details{
+
+		}
+	}
+	.alt{
+		.title{
+			background-color: #f8951d;			
+		}
+	}
+}
+.summary,
+.view-details{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.ja-pager{
+	float: left;
+}
+.ja-pager-summary{
+	float: right;
+}
+.ja-pager{
+	a, span{
+		margin-right: 5px;
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+}
+.ja-job-search{
+	.ja-form{
+		.ja-field-container,
+		.ja-submit{
+			width: 33%;
+			float: left;
+			padding-right: 5px;
+			padding-left: 5px;
+			label{
+				font-weight: 600;
+				display: none;
+			}
+			.ja-field{
+				select,
+				input{
+					border-radius: 6px;
+				    border: 1px solid #000000;
+				    width: 100%;
+				    margin-bottom: 15px;
+				    padding: 10px 5px 10px;
+				    font-family: 'DIN2014-Light','Lucida Sans Unicode','Lucida Grande',sans-serif;			
+				}
+				select{
+						&:first-child{
+							font-style: italic;
+						}						
+				}
+			}
+		}
+		.ja-submit{
+			margin-top: 32px;
+			input{
+				border-radius: 6px;
+			    padding: 12px 20px 12px;
+			    color: #fff;
+			    text-transform: uppercase;
+			    border: none;
+			    font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+			    font-size: 15px;
+			    cursor: pointer;
+			    background-color: #f8951d;
+			    width: 100%;
+			    font-weight: 600;		
+			}
+		}
+	}
+}
+#how-to-apply-section{
+	h3{
+		font-family: 'DIN2014-Light';
+		color: $orange;
+		text-transform: uppercase;		
+	}
+}
+@media only screen and (max-width: 767px){
+	#ja-jobs-widget > .ja-job-search, #ja-jobs-widget > .ja-job-list-container {
+    	width: 100%;
+	}
+	.ja-job-search{
+		.ja-form{
+			.ja-field-container,
+			.ja-submit{
+				width: 100%;
+				float: none;
+			}
+			.ja-submit{
+				margin-top: 10px;
+			}
+		}
+	}
+}
+

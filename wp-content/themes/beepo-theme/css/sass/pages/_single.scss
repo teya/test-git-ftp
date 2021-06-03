@@ -1,0 +1,227 @@
+#main-contents-page{
+	article{
+		section{
+			&:nth-child(2){
+				background-image: url('images/news-and-blogs/news-and-blogs-bg.png');
+				background-size: cover;
+				background-position: top center;
+				background-repeat: no-repeat;					
+			}
+		}
+	}
+}
+#beepo-post-entry{
+	h2{
+		font-size: calc(1em + 1vw);
+		text-transform: none;
+	}
+}
+#beepo-career-post-banner-container{
+	background: #f2f2f2;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.author-info{
+	margin-bottom: 0.5rem;
+	.author-name{
+		text-transform: capitalize;
+	}
+	.author-name, .post-date{
+		font-style: italic;
+	}
+}
+#beepo-career-social-share-container{
+	p{
+		float: left;
+	}
+}
+.beepo-post-social-share{
+	list-style: none;
+	float: left;
+	margin-left: 0px;
+	-webkit-padding-start: 10px;
+	li{
+		float: left;
+		margin-right: 5px;
+		&:last-child{
+			margin-right: 0px;
+		}
+		a{
+			i{
+				font-size: 25px;
+			    height: 25px;
+			    width: 25px;
+			}
+		    .fa-facebook-square{
+		    	color: #3B5998;
+		    }
+		    .fa-google-plus-square{
+				color: #d34836;
+		    }
+		    .fa-linkedin{
+		    	color: #4875B4;
+		    }
+		    .fa-twitter-square{
+		    	color: #33CCFF;
+		    }
+		}
+	}
+}
+#beepo-career-related-posts-container{
+	border-top: 1px solid $orange;
+	padding-top: 20px;
+}
+#beepo-post-entry{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	.container{
+		background-color: $white;
+	}
+	img{
+		margin-bottom: 20px;
+	}
+	a{
+		color: $orange !important;
+	}
+}
+.beepo-career-related-post-header-title{
+	color: $orange;
+	font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+	text-transform: uppercase;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#beepo-related-post-list{
+	margin-top: 10px;
+	list-style: none;
+	li{
+		float: left;
+		padding: 5px;
+		max-width: 370px;
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+}
+.beepo-related-post-img-container{
+	figure{
+		img{
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin:0px auto;
+		}
+	}
+}
+.beepo-career-related-post-title{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+
+//JobAdder Job Listing
+#jobadder-title-container{
+	margin-top: 50px;
+	margin-bottom: 60px;
+	.jobadder-title-inner{
+		.job-entry-title{
+			font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-weight: 100 !important;
+			line-height: normal;
+			span{
+				display: none;
+			}
+		}
+	}	
+}
+.btn.btn-primary{
+	display: none;
+}
+.job-entry-title{
+	margin-bottom: 10px;
+}
+.jobadder-title-inner{
+	p{
+		font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+		font-size: 18px;
+	}
+}
+.jobadder-job-description-container{
+	list-style: none;
+	margin-bottom: 15px;
+	-webkit-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	margin-top: 30px;
+	.jobadder-exp-section{
+		background-color: $orange;
+		padding: 15px 25px 15px;
+		p{
+			color: $white;
+			font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-weight: bold;
+			font-size: 18px;	
+			margin-bottom: 0px;
+			line-height: 18px;	
+		}
+	}
+	.jobadder-job-main-overview{
+		padding: 30px;
+	}
+	.jobadder-overview-title{
+		padding: 15px 25px 15px;
+		background-color: $outer-space;
+		p{
+			color: $white;
+			font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;	
+			font-size: 18px;	
+			margin-bottom: 0px;
+			line-height: 18px;	
+		}
+		
+	}
+}
+// Media Queries
+@media only screen and (max-width: 1199px) {
+	.beepo-career-featured-img-post{
+		figure{
+			img.beepo-career-post-img{
+				max-width: 100% !important;
+				height: auto !important;
+				margin: 0px auto;
+				display: block;
+			}
+		}
+	}
+	#beepo-related-post-list{
+		li{
+			max-width: 310px;
+		}
+	}
+}
+@media only screen and (max-width: 991px) {
+	#beepo-related-post-list{
+		li{
+			max-width: 230px;
+		}
+	}
+	.beepo-career-related-post-title{
+		    font-size: 1rem;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#beepo-related-post-list{
+		li{
+			max-width: 100%;
+		}
+	}
+	.beepo-career-related-post-title{
+		    font-size: 1.4rem;
+	}
+}

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "DIN-Regular";
+  src: url('fonts/DIN-Regular.woff2') format('woff2'),
+       url('fonts/DIN-Regular.woff') format('woff'),
+       url('fonts/DIN-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: "DIN-Bold";
+  src: url('fonts/DIN-Bold.woff2') format('woff2'),
+       url('fonts/DIN-Bold.woff') format('woff'),
+       url('fonts/DIN-Bold.ttf') format('truetype');	
+}
+@font-face{
+  font-family: "DIN-Light";
+  src: url('fonts/DIN-Light.woff2') format('woff2'),
+       url('fonts/DIN-Light.woff') format('woff'),
+       url('fonts/DIN-Light.ttf') format('truetype');	
+}
+@font-face{
+  font-family: "DIN-Medium";
+  src: url('fonts/DIN-Medium.woff2') format('woff2'),
+       url('fonts/DIN-Medium.woff') format('woff'),
+       url('fonts/DIN-Medium.ttf') format('truetype');	
+}
+.orange-heading{
+	font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: $orange;
+	text-transform: uppercase;
+}
+.outer-space-heading{
+	font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: $outer-space;
+	text-transform: uppercase;
+}
+p{
+	font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+}
+a{
+	font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: $orange;
+	text-decoration: none !important;
+	&:hover{
+		color: $hover-orange;
+	}	
+}
+h1{
+	font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: $orange;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+h1.beepo-career-homepage-jumbotron-h1{
+	font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: $orange;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	font-size: 4rem;
+	line-height: 3rem;
+	span{
+		font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;
+		color: $outer-space;
+		text-transform: none;
+		font-size: 2rem;
+		// &:first-letter{
+		// 	text-transform: inherit;
+		// }		
+	}
+}
+h2{
+	font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+	text-transform: uppercase;
+	color: $outer-space;
+}
+.beepo-main-job-category{
+  font-family: "DIN-Bold";
+  margin-bottom: 0px;	
+}
+.beepo-job-list{
+	margin-left: -20px;
+	margin-bottom: 10px;
+	li{
+		font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;	
+	}	
+}
+.entry-title{
+	color: $orange;
+	text-transform: uppercase;
+	font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+}

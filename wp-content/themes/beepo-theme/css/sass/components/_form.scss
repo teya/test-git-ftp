@@ -1,0 +1,32 @@
+.beepo-input-text-search{
+	background-color: $Porcelain;
+	border-radius: 6px;
+	border: none;
+	padding: 5px 20px 5px;
+	float: left;
+	font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;
+	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	    color: $orange;
+	    opacity: 1; /* Firefox */
+	    font-style: italic;
+	    font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;
+	}
+
+	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	    color: $orange;
+	    font-style: italic;
+	    font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;
+	}
+
+	&::-ms-input-placeholder { /* Microsoft Edge */
+	    color: $orange;
+	    font-style: italic;
+	    font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;
+	}
+}
+.beepo-input-dropdown{
+	background-color: $Porcelain;
+	border-radius: 6px;
+	border: none;
+	padding: 5px 20px 5px;
+}

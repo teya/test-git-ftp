@@ -1,0 +1,42 @@
+#beepo-career-pagination{
+    list-style: none;
+    width: 235px;
+    display: block;
+    margin: 30px auto 30px;
+	li{
+		float: left;
+		margin-right: 15px;
+		font-size: 18px;
+		&:last-child{
+			margin-right: 0px;
+		}
+		span{
+			color: $outer-space;
+		}
+		.current{
+			color: $orange !important;
+			text-decoration: underline;
+		}
+	}
+}
+.pagination{
+	display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    a{
+    	color: $gray;
+    }
+	a, span{
+		margin-right: 15px;
+	    font-size: 18px;		
+	}
+	span{
+		color: $orange !important;
+        text-decoration: underline;
+	}
+	.dots{
+		text-decoration: none !important;
+		color: $gray !important;
+	}
+}

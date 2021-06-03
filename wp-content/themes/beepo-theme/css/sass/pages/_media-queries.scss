@@ -1,0 +1,190 @@
+@media only screen and (max-width : 1200px){
+
+}
+@media only screen and (max-width : 1199px){
+
+	/* Job-roles-tabs */
+	#job-roles-list-container{
+		.job-roles-section-column{
+			.sub-job-roles-list-wrapper{
+				padding: 40px 30px 40px;
+			}
+		}
+	}
+}
+@media only screen and (max-width : 991px){
+	/*Main Page Banner*/
+	.beepo-career-page-header-container{
+		.header-main-title-container{
+			min-height: 320px;
+			.header-page-title-wrapper{
+				span{
+					h1{
+						font-size: 25px;
+	    				line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+
+	/* Job-roles-tabs */
+	#job-roles-list-container{
+		.job-roles-section-column{
+			.sub-job-roles-list-wrapper{
+				
+			}
+		}
+		.job-roles-section-column-left{
+			padding: 40px 25px 40px;
+			min-height: 330px;
+			.job-roles-list-wrapper{
+				.job-roles-list{
+					li{
+						margin-right: -25px;
+						padding: 5px 0px 5px;
+						span{
+							font-size: 11px;
+							img{
+								width: 25px;
+    							height: 25px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.job-roles-section-column-right{
+			min-height: 330px;
+			.sub-job-roles-list-wrapper{
+				.sub-job-roles-list{
+					li{
+						a{
+							font-size: 11px;
+							.fas{
+							    width: 20px;
+						    	height: 20px;							
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/*Single job profile*/
+	@include single-job-profile-991();
+}
+@media only screen and (max-width : 767px){
+	/* Job-roles-tabs */
+	#job-roles-list-container{
+		.job-roles-section-column{
+			.sub-job-roles-list-wrapper{
+				
+			}
+		}
+		.job-roles-section-column-left{
+			width: 100% !important;
+			float: unset;
+			.job-roles-list-wrapper{
+				.job-roles-list{
+					.active{
+						&:after{
+							display: none;
+						}
+					}
+					li{
+						span{
+
+							img{
+
+							}
+						}
+					}
+				}
+			}
+		}
+		.job-roles-section-column-right{
+			width: 100% !important;
+			float: unset;
+			.sub-job-roles-list-wrapper{
+				.sub-job-roles-list{
+					li{
+						a{
+
+							.fas{
+					
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	@include single-job-profile-767();
+}
+@media only screen and (max-width : 575px){
+	/* Job-roles-tabs */
+	#job-roles-list-container{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+}
+@media only screen and (max-width : 480px){
+	/*Main Page Banner*/
+	.beepo-career-page-header-container{
+		.header-main-title-container{
+			min-height: 270px;
+			.header-page-title-wrapper{
+				span{
+					h1{
+						font-size: 20px;
+	    				line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+	@include single-job-profile-480();
+}
+@media only screen and (max-width : 404px){
+	@include single-job-profile-404();
+}
+@media only screen and (max-width : 360px){
+	/*Main Page Banner*/
+	.beepo-career-page-header-container{
+		.header-main-title-container{
+			.header-page-title-wrapper{
+				span{
+					h1{
+						font-size: 17px;
+	    				line-height: 17px;
+					}
+				}
+			}
+		}
+	}
+
+}
+@media only screen and (max-width : 320px){
+	/* Job-roles-tabs */
+	#job-roles-list-container{
+		.job-roles-section-column-left{
+			padding: 30px 20px 30px;
+		}
+		.job-roles-section-column-right{
+			.sub-job-roles-list-wrapper{
+			padding: 40px 11px 40px;
+				.sub-job-roles-list{
+					li{
+						a{
+							font-size: 10px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+	@include single-job-profile-320();
+}

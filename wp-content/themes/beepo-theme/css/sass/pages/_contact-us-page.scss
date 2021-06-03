@@ -1,0 +1,246 @@
+#contact-us-jumbotron{
+	min-height: 440px;
+	background-image: url('images/contact-us/contact-us-jumbotron.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+#contact-us-jumbotron{
+	.container{
+		h1{
+			font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: $white;
+			font-size: 2.5rem;
+			text-shadow: -1px 0px 9px #ADADAD;
+		}
+	}
+}
+#contact-us-contents-wrapper{
+	background-image: url('images/contact-us/contact-us-main-background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	.container{
+		background-color: $white;
+	}
+}
+#beepo-career-contact-us-form{
+	input, textarea{
+		border: 0px solid #ffffff;
+		background-color: $input-bg;
+		margin-bottom: 15px;
+		border-radius: 12px;
+		padding: 5px 20px 5px;
+		&:focus{
+			 border-color: $orange;
+		}
+		&::placeholder { 
+		 	font-family: "DIN-Light";
+		 	font-style: italic;
+		 	font-weight: 100;			
+		}
+
+		&:-ms-input-placeholder { 
+ 			font-family: "DIN-Light";
+ 			font-style: italic;
+ 			font-weight: 100;
+		}
+
+		&::-ms-input-placeholder { 
+			font-family: "DIN-Light";
+			font-style: italic;
+			font-weight: 100;
+		}
+	}
+	.col-md-6, .col-md-12{
+		padding-right: 5px !important;
+		padding-left: 5px !important;
+	}
+	#contact-us-subject, #contact-us-message{
+		width: 100% !important;
+	}
+	#contact-us-your-name, #contact-us-tel, #contact-us-website, #contact-us-email{
+		width: 100% !important;
+	}
+	#contact-us-submit{
+		font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+		background-color: $outer-space;
+		color: $white;
+		text-transform: uppercase;
+		display: block;
+		margin:0 auto;
+		border-radius: 20px;
+		text-align: center;
+	    padding: 10px 30px 7px;
+	    font-size: 1.1em;
+	    line-height: 1.1em;
+	    cursor: pointer;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	    &:hover{
+	    	background-color: $hover-outer-space;
+	    }
+	}
+}
+#beepo-career-address-info{
+	i{
+		color: $orange;
+		float: left;
+		line-height: 20px;
+	}
+	p{
+		font: left;
+		margin-left: 20px;
+		font-size: 15px;
+		margin-bottom: 0.1rem;
+	}
+}
+#contact-us-bottom-contents-container{
+	background-image: url('images/contact-us/contact-us-bottom-content-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	min-height: 450px;
+	.col-lg-12{
+		#contact-us-bottom-contents{
+			min-height: 450px;	
+			position: relative;
+			#contact-us-bottom-contents-info{
+				position: absolute;
+				bottom: 20%;
+				width: 100%;
+				.contact-us-bottom-contents-title{
+					font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+					font-size: 2.5em;
+					color: $white;				
+				}
+				.contact-us-bottom-contents-desc{
+					font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+					font-size: 1.4em;
+					color: $white;
+				}
+			}
+		}
+	}
+}
+#contact-us-bottom-social-container{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: $outer-space;
+	.col-lg-4{
+		border-right: 1px solid $white;
+		&:last-child{
+			border-right: 0px solid $white;
+		}
+	}
+	.contact-us-bottom-social{
+		 padding-left: 40px;
+	}
+	.contact-us-bottom-social-list{
+		-webkit-padding-start: 0px;
+		list-style: none;
+		margin: 0px auto 0px;
+		vertical-align: middle;
+		li{
+			width: 100%;
+			clear: both;
+			color: $white;
+			.list-container{
+				height: 100%;
+				clear: both;
+				display: block;
+			}
+			i{
+				margin-right: 10px;
+				line-height: 20px;
+				height: 30px;
+				width: 20px;
+				float: left;
+			}
+			p{
+				margin-bottom: 0px;
+				line-height: 18px;
+			}
+			a{
+				color: $white;
+			}
+		}
+	}
+	.contact-us-bottom-logo{
+		figure{
+			img{
+			    margin: 20px auto;
+			    display: block;				
+			}
+		}
+	}
+}
+
+
+
+#beepo-career-map-wrapper{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+#beepo-career-map-wrapper > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+@media only screen and (max-width: 320px) {
+	.contact-us-bottom-contents-title{
+		font-size: 1.5em !important;
+	}
+	.contact-us-bottom-contents-desc{
+		font-size: 1em !important;
+	}
+}
+@media only screen and (max-width: 991px) {
+	#contact-us-bottom-contents-container{
+		.col-lg-12{
+			#contact-us-bottom-contents{
+				#contact-us-bottom-contents-info{
+					bottom: 0%;
+				}
+			}
+		}
+	}
+	#contact-us-bottom-social-container{
+		.col-lg-4{
+			border-right: 0px solid $white;	
+		}
+	}
+	.contact-us-bottom-social-list{
+		margin-bottom: 30px !important;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#main-contact-us-contents{
+		margin-bottom: 15px;
+	}
+	#beepo-career-address-info{
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.contact-us-bottom-contents-title{
+		font-size: 1.75rem !important;
+	}
+	.contact-us-bottom-contents-desc{
+		font-size: 0.8em !important;
+	}
+}
+

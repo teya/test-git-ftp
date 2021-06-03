@@ -1,0 +1,76 @@
+
+#contact-us-page-container{
+	background-color: $black-haze;
+	padding-bottom: 15px;
+}
+#contact-from-container{
+	.contact-form-title{
+		font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+	#beepo-career-contact-us-form2{
+		input,
+		textarea{
+			border: unset;
+			width: 100%;
+			margin-bottom: 15px;
+			padding: 10px 15px 10px;
+			font-family: 'DIN2014-Light','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		}
+		input.wpcf7-captchar{
+			width: 130px;
+			margin-left: 10px;
+		}
+		input[type="submit"]{
+			background-color: $orange;
+			color: $white;
+			text-transform: uppercase;
+			font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+			font-size: 20px;
+			line-height: 20px;
+			cursor: pointer;
+			max-width: 120px;
+			float: right;
+			border-radius: 4px;
+			font-family: 'DIN2014-Light','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		}
+		label{
+			font-family: 'DIN2014-Light','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		}
+		.wpcf7-not-valid{
+			border: 1px solid red;
+		}
+		.wpcf7-not-valid-tip{
+			margin-bottom: 15px;
+		}
+		.wpcf7-validation-errors{
+			border: 2px solid red !important;
+			font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+			color: red;
+		}
+	}
+}
+#contact-us-bottom-contact-info-container{
+	background-color: $white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.contact-form-title{
+		font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+	.contact-us-info-container{
+		p,a{
+			font-family: 'DIN2014-Light','Lucida Sans Unicode','Lucida Grande',sans-serif;
+			margin-bottom: 0px;
+			// font-size: 18px;
+			line-height: 16px;
+			margin-bottom: 0px;
+		}
+	}
+}

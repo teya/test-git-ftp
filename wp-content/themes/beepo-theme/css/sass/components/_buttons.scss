@@ -1,0 +1,116 @@
+.beepo-btn-v2{
+	border-radius: 15px;
+	color: $white;
+	display: block;
+	font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+	font-size: 19px;
+	line-height: 19px;
+	max-width: 260px;
+	padding: 15px 65px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	&:hover{
+		color: $white;
+	}
+}
+.beepo-btn-orange-v2{
+	background-color: $orange;
+}
+.main-button-orange{
+	background: $orange;
+	color: $white;
+	text-transform: uppercase;
+	border: 0px;
+	border-radius: 6px;
+	padding: 5px 20px 5px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	// &:hover{
+	// 	background-color: $hover-orange;
+	// }
+}
+.beepo-read-more-btn{
+	border: 1px solid $orange;
+	background-color: $white;
+	color: $orange;
+	padding: 5px 25px 5px;
+	cursor: pointer;
+	border-radius: 12px;
+	text-transform: uppercase;
+}
+.beepo-main-read-more-btn{
+	background: $orange;
+	color: $white;
+	text-transform: uppercase;
+	border: 0px;
+	border-radius: 20px;
+	padding: 7px 20px 5px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.beepo-post-read-more-btn{
+	border: 1px solid $orange;
+	background-color: transparent;
+	color: $orange;
+	padding: 5px 25px 5px;
+	cursor: pointer;
+	border-radius: 20px;
+	text-transform: uppercase;
+}
+.beepo-career-gray-btn{
+	cursor: pointer;
+    background-color: $outer-space;
+    color: $white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    border: none;
+    padding: 9px 30px 7px;
+    font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+  //   &:hover{
+		// background-color: $hover-outer-space;
+  //   }
+}
+.beepo-career-apply-now-btn{
+	cursor: pointer;
+	background-color: $orange;
+	text-transform: uppercase;
+	border-radius: 16px;
+	padding: 5px 20px 5px;
+	color: $white;
+	border: none;
+}
+.beepo-carreer-white-btn{
+	border-radius: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 5px 25px 2px;
+    line-height: 20px;
+    cursor: pointer;
+    margin: 0px auto;
+    display: block;
+}
+.search-for-job-link{
+	font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 22px;
+	color: $orange;
+	text-transform: uppercase;
+	border-bottom: 1px solid $orange;
+}
+.button-apply-now-buttom{
+	text-align: center;
+	display: block;
+	margin-bottom: 35px;
+}

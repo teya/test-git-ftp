@@ -1,0 +1,82 @@
+#role-profiles-page{
+	padding-top: 30px;
+	section{
+		&:nth-child(2){
+			background-image: url('images/role-profiles/role-profiles-bg.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top center;			
+		}
+	}
+}
+#role-profiles-top-contents{
+	margin-bottom: 40px;
+}
+#beepo-career-role-profiles-list{
+	list-style: none; 
+	li.beepo-career-role-items{
+		list-style: none;
+		margin-bottom: 15px;
+		box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.75);
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		overflow: hidden;
+		.beepo-career-list-jobs-container{
+			padding: 30px 20px 30px;	
+			background: $white;			
+		}
+		&:nth-child(odd){
+			.beepo-career-role-profile-container{
+				.beepo-career-header-category-title{
+					background-color: $orange;
+				}
+			}
+		}
+		&:nth-child(even){
+			.beepo-career-role-profile-container{
+				.beepo-career-header-category-title{
+					background-color: $outer-space;
+				}
+			}
+		}		
+	}
+	list-style: none;
+	-webkit-padding-start: 0px;
+	li{
+		list-style: disc; 
+		font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+		a{
+			color: $outer-space;
+			&:hover{
+				color: $light-gray;
+			}
+		}
+	}
+}
+.beepo-career-list-jobs{
+	// margin-bottom: 40px;
+	li{
+		float: left;
+		width: 330px;
+	}
+}
+.beepo-career-header-category-title{
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	padding: 10px 20px 10px;
+	h2{
+		color: $white;
+		font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+		font-weight: bold;
+		font-size: 1.5rem;
+		margin-bottom: 0px;
+	}
+}
+.beepo-career-paginatio{
+	li{
+		list-style-type: none;
+	}
+}

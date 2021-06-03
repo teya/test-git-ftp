@@ -1,0 +1,130 @@
+#beepo-single-job-profile-container{
+	.main-header-banner{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: $gray;
+		.job-profile-title-container{
+			display: table;
+			min-height: 80px;
+			.job-profile-title{
+				display: table-cell;
+				font-family: 'DIN2014-Bold';
+				font-size: 38px;
+				line-height: 38px;
+				margin-bottom: 0px;
+				vertical-align: middle;
+			}
+		}
+
+	}
+}
+.role-profile-featured-img{
+	margin-bottom: 0px;
+	float: left;
+	margin-right: 10px;
+	img{
+		max-width: 80px;
+		max-height: 80px;
+		filter: brightness(0) invert(1);
+	}
+}
+.job-profile-content-container{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.job-profile-content{
+	margin-bottom: 20px;
+}
+@mixin single-job-profile-767(){
+	#beepo-single-job-profile-container{
+		.main-header-banner{
+			.job-profile-title-container{
+				.job-profile-title {
+				    font-size: 23px;
+				    line-height: 23px;
+				}
+			}
+		} 
+	}	
+}
+@mixin single-job-profile-991() {
+	.banner {
+		font-size: 20px;
+	}
+	#beepo-single-job-profile-container{
+		.main-header-banner{
+			.job-profile-title {
+			    font-size: 23px;
+			    line-height: 50px;
+			}
+
+		} 
+	}
+	.role-profile-featured-img{
+		img {
+		    max-width: 50px;
+		    max-height: 50px;
+		} 
+	} 
+}
+@mixin single-job-profile-480() {
+	.role-profile-featured-img{
+		float: unset;
+		img{
+			margin: 0px auto;
+			display: block;	
+			margin-bottom: 10px;	
+		}
+	}
+	#beepo-single-job-profile-container{
+		.main-header-banner{
+			.job-profile-title-container{
+				.job-profile-title {
+					text-align: center;
+					line-height: 23px;
+					font-size: 23px;
+				}
+			}
+		} 
+	}
+	.search-for-job-link-container{
+		.orange-btn{
+		    text-align: center;
+		    margin: 0px auto;
+		    width: 100%;
+		    display: block;
+		    max-width: 350px;
+		}		
+	}
+}
+@mixin single-job-profile-480() {
+	.job-profile-title-container{
+		width: 100%;
+		.job-profile-title {
+		    font-size: 18px;
+		    line-height: 20px;
+		    text-align: center;
+		}
+	}
+	.role-profile-featured-img{
+	    float: unset;
+	    margin: 0px auto 10px;
+	    display: block;
+	    text-align: center;
+	}
+}
+@mixin single-job-profile-404() {
+	.job-profile-title-container{
+		.job-profile-title {
+			text-align: center;
+		}
+	}
+}
+@mixin single-job-profile-320() {
+	.job-profile-title-container{
+		.job-profile-title {
+		    font-size: 16px !important;
+		    line-height: 20px !important;
+		}
+	}
+}

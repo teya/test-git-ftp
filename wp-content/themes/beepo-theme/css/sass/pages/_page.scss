@@ -1,0 +1,266 @@
+#beepo-careers-default-page{
+	background-image: url('images/default-page-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;	
+	.container{
+		background-color: $white;
+	}	
+}
+
+#page-main-banner{
+	min-height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#search-you-job-form {
+	max-width: 840px;
+	margin-left: 210px;
+	input{
+		float: left;
+	}
+}
+#search-for-a-job-container{
+	background-color: $black-haze;
+}
+#search-you-job-form-wrapper{
+	background-image: url(images/homepage-v2/search-magnifying-glass-bg.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+	background-color: $orange;
+	border-radius: 70px;
+	padding: 60px 25px 60px;
+	margin-bottom: 70px;
+	z-index: 1;
+}
+#search-you-job-form-wrapper{
+ 	width: 100%;
+ 	float: right;
+}
+.search-you-job-form-input-text{
+ 	border-bottom-left-radius:  15px;
+ 	border-top-left-radius:  15px;
+ 	border: 0px solid $orange;
+ 	font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+ 	padding: 10px 15px 10px;
+ 	width: 90%;
+ }
+.search-you-job-form-input-text::placeholder{
+ 	font-family: 'DIN2014-Italic','Lucida Sans Unicode','Lucida Grande',sans-serif;
+}
+.search-you-job-form-input-submit{
+ 	border-bottom-right-radius:  15px;
+ 	border-top-right-radius:  15px;
+ 	border: 0px solid $orange;
+ 	padding: 10px 15px 10px;
+ 	width: 10%;
+ 	background-color: $gray;
+ 	color: $white;
+ 	font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+ 	cursor: pointer;
+}
+
+.job-panels-container{
+	.job-panels-wrapper{
+		background-color: $outer-space;
+		padding: 20px 15px 20px;
+		margin-bottom: 30px;
+		@include transition-element;
+		@include scale-animation-hover-out;
+		.job-panels-icon{
+			// padding: 10px;
+			float: left;
+			width: 23%;
+			border-right: 2px solid $white;
+			img{
+				max-width: 60px;
+				max-height: 60px;
+				display: block;
+				// margin: 0px auto;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.job-panel-name{
+			float: left;
+			width: 77%;
+			// padding: 10px 10px 10px 15px;
+			padding-left: 10px;
+			padding-right: 10px;
+			position: relative;
+			height: 60px;
+			div{
+			    position: absolute;
+			    // left: 93px;
+			    // top: 21px;
+			    // width: 135px;
+			    height: 60px;
+			    display: table;
+				// color: $white;
+				// font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif;
+				// font-size: 20px;
+				// line-height: 20px;
+				// position: absolute;
+				// top: 50%;
+				p{
+					color: $white;
+					font-family: 'DIN2014-Bold','Lucida Sans Unicode','Lucida Grande',sans-serif !important;
+					font-size: 17px;
+					line-height: 20px;		
+					margin-bottom: 0px;	
+				    display: table-cell;
+				    vertical-align: middle;
+				    text-align: left;		
+				}
+			}
+			.job-title-margin-top{
+		  		// margin-top: 10px;
+
+			}
+		}
+		&:hover{
+			background-color: $orange !important;
+			-webkit-box-shadow: 0px 0px 52px -14px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 52px -14px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 52px -14px rgba(0,0,0,0.75);
+			@include transition-element;
+			@include scale-animation-hover;
+		}
+	}
+}
+
+
+@media only screen and (max-width : 1200px) {
+	#page-main-banner{
+		min-height: 420px;
+	}
+}
+@media only screen and (max-width : 1199px) {
+	.job-panels-icon{
+		// width: 28% !important;
+		img{
+			max-width: 40px !important;
+			max-height: 40px !important;
+		}
+	}
+	.job-panel-name{
+		// width: 72% !important;
+		height: 40px !important;
+		div{
+			height: 35px !important;
+			p{
+				// top: 0% !important;
+				font-size: 17px !important;				
+			}
+
+		}
+	}
+}
+
+@media only screen and (max-width : 991px){
+	#search-you-job-form-wrapper{
+		padding: 30px 25px 30px;
+		margin-top: -55px;
+	}
+	#join-us-cta-container{
+		margin-bottom: 10px;
+		.beepo-btn-orange-v2{
+			margin: 35px auto 0px;
+		}
+	}
+	#search-you-job-form{
+		margin-left: 130px;
+	}
+	.search-you-job-form-input-text{
+		width: 70%;
+	}
+	.search-you-job-form-input-submit{
+		width: 30%;
+	}
+	.job-panels-icon{
+		width: 27% !important;
+	}
+	.job-panel-name{
+		width: 73% !important;
+		height: 40px;
+		div{
+
+			p{
+				font-size: 12px !important;
+				line-height: 12px !important;
+				top: 50% !important;				
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.job-panels-icon {
+	    width: 10% !important;
+	}
+	.job-panel-name{
+		width: 90% !important;
+		div{
+			p{
+				font-size: 17px !important;
+	    		line-height: 17px !important;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width : 480px) {
+	#page-main-banner{
+		min-height: 260px;
+	}
+	#search-you-job-form {
+	    margin-left: 30px;
+	}
+	#search-you-job-form-wrapper{
+		margin-top: -40px;
+	    background-position: -25px;
+	    padding: 20px 25px 20px;
+	    margin-bottom: 30px;
+	}
+	#job-opportunities-in-clark-section{
+		padding-bottom: 30px !important;
+		h4{
+		    font-size: 18px;
+		    margin-bottom: 30px;
+		}
+	}
+	.job-panels-icon {
+	    width: 15% !important;
+	}
+	.job-panel-name{
+		width: 80% !important;
+	}
+}
+@media only screen and (max-width : 360px) {
+	.job-panels-icon {
+	    width: 20% !important;
+	}
+	.job-panel-name{
+		width: 80% !important;
+		div{
+			p{
+				font-size: 17px !important;
+	    		line-height: 17px !important;				
+			}
+		}
+	}
+}
+@media only screen and (max-width : 320px) {
+	#search-you-job-form {
+	    margin-left: 0px;
+	}
+	.search-you-job-form-input-text{
+		width: 70%;
+	}
+	.search-you-job-form-input-submit{
+		width: 30%;
+	}
+}

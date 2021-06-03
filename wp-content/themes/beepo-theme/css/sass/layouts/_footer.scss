@@ -1,0 +1,266 @@
+#beepo-main-footer-three{
+	background-color: $marshlandapprox;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#footer-logo-container{
+	img{
+		width: 100%;
+		max-width: 250px;
+		height: auto; 
+		display: block;
+		margin: 0px auto;
+	}
+}
+.footer-social-container{
+	margin-top: 15px;
+}
+.footer-main-nav{
+	margin: 10px 0px 0px;
+	padding: 0px;
+	list-style-type: none;
+	li{
+		float: left;
+		border-right: 1px solid $orange;
+		margin-bottom: 10px;
+		a{
+			padding: 0px 15px 0px;
+			font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+			line-height: 18px;
+			font-size: 18px;
+			&:hover{
+				color: $orange;
+			}
+		}
+		&:last-child{
+			border-right: unset;
+		}
+	}
+}
+#main-bottom-footer-nav{
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	list-style-type: none;
+	li{
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: 100;
+		color: $white;
+		float: left;
+		padding: 0px 10px 0px;
+		border-right: 1px solid $white;
+		font-family: 'DIN2014-Light','Lucida Sans Unicode','Lucida Grande',sans-serif;
+		a{
+			color: $white;
+			@include transition-element;
+			&:hover{
+				color: $orange;
+				@include transition-element;
+			}
+		}
+		&:last-child{
+			border-right: unset;
+		}
+	}
+}
+.footer-social-links{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	li{
+		// float: left;
+		padding: 0px 15px 0px;
+		// min-width: 295px;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		a{
+			font-family: 'DIN2014-Light','Lucida Sans Unicode','Lucida Grande',sans-serif;
+			font-size: 13px;
+			line-height: 13px;
+			color: $white;
+			@include transition-element;
+			&:hover{
+				color: $orange;
+				@include transition-element;
+			}
+		}
+		&:nth-child(n+3){
+			margin-right: 0px;
+			// min-width: 205px;
+		}
+	}
+}
+// Defualt Footer
+#beepo-main-footer-one{
+	background-color: $outer-space;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.beepo-footer-one-list{
+	list-style: none;
+	-webkit-padding-start: 0px;
+	li{
+		float: left;
+		margin-right: 15px;
+		height: 15px;
+		a{
+			color: $white;
+			font-size: 12px;
+			line-height: 15px;
+
+			i{
+				float: left;
+				margin-right: 5px;
+				line-height: 27px;
+			}
+			span{
+			border-right: 1px solid $white;		
+			padding-right: 15px;		
+			}
+
+		}
+		&:last-child{
+			margin-right: 0px;
+			a{
+				span{
+					border-right: 0px solid $white;					
+				}
+			}
+		}
+	}
+}
+
+// Footer Two
+#beepo-main-footer-two{
+	background-color: $shark;
+	min-height: 40px;
+	.beepo-footer-two-list{
+		margin-top: 5px;
+		list-style: none;
+		    margin-bottom: 3px;
+		-webkit-padding-start: 0px;
+		li{
+			float: left;
+			margin-right: 15px;
+			height: 27px;
+			span{
+				border-right: 1px solid $white;
+				padding-right: 15px;
+				line-height: 27px;
+			}
+			a, span{
+				color: $white;
+				font-size: 12px;
+				line-height: 15px;
+				display: inline-block;
+				i{
+					float: left;
+					margin-right: 5px;
+					line-height: 27px;
+				}
+				span{
+				border-right: 1px solid $white;		
+				padding-right: 15px;		
+				}
+			}
+			&:last-child{
+				margin-right: 0px;
+				a{
+					span{
+						border-right: 0px solid $white;					
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	#beepo-main-footer-two {
+		.beepo-footer-two-list{
+			display: block;
+		    width: 390px;
+		    text-align: center;
+		    margin: 0px auto;
+		}
+	}
+	#footer-social-container{
+		text-align: center;
+	}
+	#footer-main-nav-wrapper{
+		width: 435px;
+	    display: block;
+	    margin: 0px auto;		
+	}
+	#main-bottom-footer-nav{
+	    width: 405px;
+	    margin: 10px auto;
+	    display: block;		
+	}
+}
+@media only screen and (max-width: 480px) {
+	#footer-main-nav-wrapper{
+	    width: 290px;
+		.footer-main-nav{
+			li{
+				a{
+					padding: 0px 5px 0px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	#main-bottom-footer-nav {
+		width: 335px;
+		li{
+			font-size: 11px;
+		}
+	}
+}
+@media only screen and (max-width: 414px) {
+	#beepo-main-footer-two {
+		.beepo-footer-two-list{
+			display: block;
+		    width: 390px;
+		    text-align: center;
+		    margin: 0px auto;
+			li{
+				span{
+					font-size: 10px !important;
+				}
+			}
+		}
+	}   
+}
+@media only screen and (max-width: 375px) {
+	#beepo-main-footer-two {
+		.beepo-footer-two-list{
+		    width: 335px;
+		}
+	}   
+}
+@media only screen and (max-width: 320px) {
+	#beepo-main-footer-two {
+		.beepo-footer-two-list{
+		    width: 100%;
+		    li{
+		    	float: none;
+		    	width: 100%;
+		    	span{
+		    		border-right: none;
+		    	}
+		    	a{
+		    		span{
+		    			border-right: none;
+		    		}
+		    	}
+		    }
+		}
+	}
+	#main-bottom-footer-nav {
+		width: 280px;
+		li{
+			font-size: 9px;
+		}
+	}   
+}

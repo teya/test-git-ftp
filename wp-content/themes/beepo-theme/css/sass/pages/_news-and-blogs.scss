@@ -1,0 +1,106 @@
+#news-and-blog-jumbotron{
+	min-height: 440px;
+	background-image: url('images/news-and-blogs/news-and-blogs-banner.png');
+	background-size: cover;
+	background-position: center right;
+	background-repeat: no-repeat;
+	.jumbotron-contents-wrapper{
+		height: 100%;
+		display: block;
+		.jumbotron-contents{
+			top:50%;
+			.display-4{
+				color: $orange;
+				text-transform: uppercase;
+				font-family: "DIN-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+			}	
+			.lead{
+				font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;
+			}				
+		}
+	}
+
+}
+#page-main-contents{
+	background-image: url('images/news-and-blogs/news-and-blogs-bg.png');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;	
+}
+#beepo-career-featured-post-container{
+	margin-bottom: 	60px;
+	#beepo-career-featured-post-wrapper{
+		background-color: $white;
+		border: 2px solid $orange;
+		border-radius: 16px;
+		padding: 20px;
+		-webkit-box-shadow: 0px 5px 22px -3px rgba(168,168,168,1);
+		-moz-box-shadow: 0px 5px 22px -3px rgba(168,168,168,1);
+		box-shadow: 0px 5px 22px -3px rgba(168,168,168,1);
+		.top-featured-post-img{
+			width: 100% !important;
+			height: auto;
+		}
+		.featured-post-header{
+			color: $orange;
+			text-transform: uppercase;
+			font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+		.featured-post-title{
+			color: $orange;
+			text-transform: uppercase;
+			font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-weight: bold;	
+			font-size: 1.4em;		
+		}
+		.author-info{
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+			span{
+				font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;	
+				font-style: italic;		
+			}
+		}
+	}
+}
+#beepo-career-recent-posts-container{
+	background-color: $white;
+	#beepo-career-recent-posts{
+		list-style: none;
+		li{
+			border-bottom: 1px solid $orange;
+			&:last-child{
+				border-bottom: 0px solid $white;			
+			}
+			.featured-post-img{
+				width: 100% !important;
+				height: auto;
+			}
+			.beepo-career-post-title{
+				color: $orange;
+				text-transform: uppercase;
+				font-family: "DIN-Bold", Roboto, "Helvetica Neue", Arial, sans-serif;
+				font-weight: bold;	
+				font-size: 1.4em;				
+			}
+			.author-info{
+				margin-top: 0.5rem;
+				margin-bottom: 0.5rem;
+				span{
+					font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;	
+					font-style: italic;		
+				}
+			}
+			margin-bottom: 40px;
+			padding-bottom: 40px;
+		}
+	}
+}
+@media only screen and (max-width: 768px){
+	#news-and-blog-jumbotron{
+		background-image: none;
+	}
+}
+

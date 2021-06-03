@@ -1,0 +1,319 @@
+#beepo-header-v3-contact-info{
+	margin-left: 15px;
+	padding:0px;
+	li{
+		border: none !important;
+		margin-right: 5px;
+		a{
+			font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+			font-size: 16px;
+			line-height: 16px;
+			.fa-envelope, .lnr-phone{
+				margin-right: 5px;
+			}
+			span{
+				&:before{
+					margin-right: 0px;
+				}
+			}	
+		}
+
+		&:last-child{
+			margin-right: 0px;
+		}	
+	}
+}
+#home_page_header_contact_info_mobile{
+	display: none;
+	ul{
+		list-style-type: none;
+		text-align: center;
+	}
+}
+#beepo-top-main-menu-v2{
+	padding: 10px 0px 10px;
+	.beepo-mobile-nav{
+		margin-right: 15px;
+	}
+}
+.beepo-main-nav-2{
+	li{
+		a{
+			font-family: 'DIN2014-Regular','Lucida Sans Unicode','Lucida Grande',sans-serif;
+			@include transition-element;
+			border-bottom: 1px solid $white;
+			&:hover{
+				@include transition-element;
+				color: $orange !important;
+				border-bottom: 1px solid $orange;
+			}
+		}
+	}
+}
+#masthead{
+	padding-left: 15px;
+	padding-right: 15px;
+	border-bottom: 1px solid #ebeced
+}
+//Social Top Icons
+#header-social-top-container{
+	padding: 5px;
+	#header-social-top{
+		 li{
+			list-style: none;
+			float: left;
+			margin-right: 10px;
+			&:last-child{
+				margin-right: 0px;
+			}
+			a{
+				color: $gray;
+			}
+		}		
+	}
+}
+//Header LOGO
+#beepo-top-logo-container{
+	// padding-top: 8px;
+	padding-right: 17px;
+	padding-left: 23px;
+	#beepo-top-logo{
+		max-width: 142px;
+		max-height: 40px;
+
+	    // margin-top: -5px;
+	}
+}
+
+#beepo-header-top-contact-container{
+	vertical-align: middle;
+	padding-left: 40px;
+	margin-top: 6px;
+	float: left;
+	margin-bottom: -13px;
+	// border-left: 1px solid #efefef;
+	a{
+		text-decoration: none;
+		color: $orange;
+      	font-family: "DIN-Medium", Roboto, "Helvetica Neue", Arial, sans-serif;
+   		font-size: 22px;
+		span{
+			float: none;
+			margin-right: 10px;
+			font-size: 18px;
+		}
+		i{
+			margin-right: 5px;
+    		margin-top: 5px;
+    		float: left;
+    		font-size: 14px;
+		}				
+
+	}
+}
+
+//Main Menu
+#beepo-top-main-menu{
+	width: 100%;
+	padding: 0px;
+	.navbar-brand{
+		// float: left;
+		padding: 0px;
+	}
+	.navbar-collapse{
+		.nav-item{
+			margin-right: 15px;
+			min-height: 55px;
+			&:last-child{
+				margin-right: 0px;
+			}
+			a{
+				font-family: "DIN-Light", Roboto, "Helvetica Neue", Arial, sans-serif;
+				font-size: 16px;
+				-webkit-font-smoothing: antialiased;
+  				-moz-osx-font-smoothing: grayscale;
+				font-weight: 600;
+				color: $gray;
+				border-bottom: 2px solid $white;
+				-webkit-transition: all 0.2s ease-in-out;
+				-moz-transition: all 0.2s ease-in-out;
+				-o-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+		      	min-height: 55px;
+		      	line-height: 55px;
+				&:hover{
+					color: $orange;
+					border-bottom: 2px solid $orange;
+				}
+			}
+		}
+		.current_page_item{
+			a{
+				color: $orange;				
+			}
+		}
+	}
+}
+.beepo-career-email-account{
+	margin-top: -20px;
+	.fa-envelope{
+		margin-top: 11px !important;
+	}
+}
+#beepo-logo-main-container{
+	list-style: none;
+	margin-bottom: 0px;
+	li{
+		display: inline-block;
+		&:first-child{
+			padding-right: 5px;
+			border-right: 1px solid #efefef;
+		}
+	}
+}
+
+// Media Queries
+@media only screen and (max-width: 1199px) {
+	.beepo-career-email-account{
+		margin-top: 0px;
+	}
+	.navbar-toggler {
+		margin-right: -15px;
+	}
+	#beepo-logo-main-container{
+
+	    // margin-bottom: 20px;
+	}
+	#masthead .container{
+		max-width: 100% !important;
+	}
+	#beepo-header-top-contact-container{
+		p{
+			// font-size: 15px;
+		}
+	}
+	#beepo-homepage-main-banner{
+		.left-content-banner{
+		    min-height: 420px;
+		    background-position: center;
+		}
+		#banner-white-gradient{
+			display: none;
+		}
+	}
+	#beepo-career-nav-wrapper{
+		width: 100%;
+		display: block;
+	}
+	.navbar-brand{
+		width: 60%;
+	}
+	.navbar-toggler{
+		float: right;
+	}
+}
+@media only screen and (max-width: 991px) {
+	#home_page_header_contact_info_mobile{
+		display: block !important;
+	}
+	.home_page_header_contact_info{
+		display: none !important;
+	}
+	.beepo-main-logo-v2 li:first-child{
+		border: none !important;
+	}
+	#beepo-top-main-menu{
+		padding: 10px;
+	}
+	#beepo-top-main-menu{
+		.navbar-collapse{
+			.nav-item{
+				a{
+					min-height: 21px;
+			  		line-height: 21px;
+			  		border-bottom:  none;
+					&:hover{
+						border-bottom:  none;
+					}			  		
+				}
+			}
+		}
+	}
+	#navbarNav{
+		margin-top: 15px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#beepo-top-main-menu{
+		float: none;
+		#navbarNav{
+			.navbar-nav{
+				margin: 0px none;
+				text-align: left;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 575px) {
+	#beepo-top-logo-container{
+		border-right: 0px;
+		padding-left: 0px;
+		padding-right: 5px;
+	}
+	#beepo-header-top-contact-container{
+		padding-left: 10px;
+		a{
+			font-size: 18px;
+			float: none;
+			i, span{
+				float: none;
+				font-size: 13px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 414px) {
+	#beepo-header-top-contact-container{
+		  margin-bottom: -4px;
+		a{
+			font-size: 11px;
+			i{
+				margin-top: 3px;
+			}
+		}
+	}
+	#beepo-top-logo-container{
+		padding-top: 3px;
+		#beepo-top-logo{
+			max-width: 80px;
+			height: auto !important;
+			max-height: none;
+			margin-top: -10px;
+		}
+	}
+
+}
+@media only screen and (max-width: 375px) {
+	#beepo-header-top-contact-container {
+		a{
+			// font-size: 12px;
+			i{
+				margin-top: 3px;
+			}
+		}
+	}
+	#beepo-top-logo-container{
+		padding-top: 3px;
+	}
+}
+@media only screen and (max-width: 320px){
+	#beepo-top-logo-container{
+		padding-top: 9px;
+	}
+}
+
+
+
+
+
+
